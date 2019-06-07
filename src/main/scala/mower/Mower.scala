@@ -1,11 +1,7 @@
 package mower
 
 case class Mower(position: Position){
-  def forward: Mower = this.copy(
-    position = position.forward
-  )
-
-  def rotate(rotationDirection: RotationDirection): Mower = this.copy(
-    position = position.rotate(rotationDirection)
+  def move(action: Action): Mower = this.copy(
+    position = position.move(action)
   )
 }

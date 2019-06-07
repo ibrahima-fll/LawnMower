@@ -1,7 +1,7 @@
 package mower
 
 case class Position(x: Int, y: Int, headDirection: Direction) {
-  def forward: Position =
+  private def forward: Position =
     headDirection match {
       case N => this.copy(y = y + 1)
       case S => this.copy(y = y - 1)
@@ -9,10 +9,11 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
       case E => this.copy(x = x + 1)
     }
 
-  def rotate(rotationDirection: RotationDirection): Position =
-    rotationDirection match {
+  def move(action: Action): Position =
+    action match {
       case G => this.copy(headDirection = turnLeft)
       case D => this.copy(headDirection = turnRight)
+      case A => this.forward
     }
 
   private def turnLeft: Direction = {
