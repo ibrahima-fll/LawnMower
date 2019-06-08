@@ -1,11 +1,15 @@
+import lawn.Lawn
 import scopt.OParser
 import utils.Config
 import utils.Config.parser
 
-class Main extends App {
-
+object Main extends App {
   OParser.parse(parser, args, Config()) match {
-    case Some(conf) => ???
-    case _ => ??? //TODO: log error message.
+    case Some(conf) => Lawn(conf.filename) match {
+      case Right(lawn) => lawn.run.foreach(println)
+      case Left(exception) => throw exception
+    }
+
+    case _ => //TODO: log error message.
   }
 }

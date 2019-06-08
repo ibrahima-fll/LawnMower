@@ -6,6 +6,7 @@ scalaVersion := "2.12.8"
 
 libraryDependencies += "com.github.scopt" %% "scopt" % "4.0.0-RC2"
 libraryDependencies += "com.lihaoyi" %% "fastparse" % "2.1.0"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 
 scalacOptions ++= Seq(
   "-deprecation",                      // Emit warning and location for usages of deprecated APIs.
