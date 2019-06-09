@@ -20,7 +20,7 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
       else this
     }
 
-  private def turnLeft: Direction = {
+  private[mower] def turnLeft: Direction = {
     headDirection match {
       case N => W
       case S => E
@@ -29,7 +29,7 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
     }
   }
 
-  private def turnRight: Direction = {
+  private[mower] def turnRight: Direction = {
     headDirection match {
       case N => E
       case S => W
@@ -38,7 +38,7 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
     }
   }
 
-  private def isMoveAllowed(dimension: Dimension): Boolean = this match {
+  private[mower] def isMoveAllowed(dimension: Dimension): Boolean = this match {
       case Position(0, _, W) | Position(_, 0, S) | Position(dimension.width, _, E) | Position(_, dimension.height, N) => false
       case _ => true
   }

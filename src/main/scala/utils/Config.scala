@@ -11,8 +11,6 @@ object Config {
     import builder._
     OParser.sequence(
       programName("LawnMower"),
-      head("scopt", "4.x"),
-      // option -f, --foo
       opt[String]('f', "filename")
         .required()
         .valueName("<file>")
