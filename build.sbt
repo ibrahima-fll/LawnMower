@@ -55,3 +55,17 @@ scalacOptions ++= Seq(
   "-Ywarn-unused:privates",            // Warn if a private member is unused.
   "-Ywarn-value-discard"               // Warn when non-Unit expression results are unused.
 )
+
+lazy val app = (project in file(".")).settings(
+    mainClass in assembly := Some("Main")
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("javax", "servlet", _ @ _*)         => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".html" => MergeStrategy.first
+  case "application.conf"                            => MergeStrategy.concat
+  case "unwanted.txt"                                => MergeStrategy.discard
+  case x =>
+    val oldStrategy = (assemblyMergeStrategy in assembly).value
+    oldStrategy(x)
+}

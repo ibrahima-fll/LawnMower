@@ -71,7 +71,7 @@ class ParserTest extends WordSpec with Matchers {
           """5 5
             |1 2 N
             |GAGAGAGAA
-            |3 3 E
+            |3 3
           """.stripMargin, Parser.configFileParser(_)).isSuccess shouldBe false
 
         parse(
