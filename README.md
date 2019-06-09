@@ -2,9 +2,8 @@
 
 # Usage
 Run the following command.
-`sbt assembly
-java -jar target/scala-2.12/LawnMower-assembly-0.1.jar "-f" "path-to-lawnmower-config-file"
-`
+* `sbt assembly`
+* `java -jar target/scala-2.12/LawnMower-assembly-0.1.jar "-f" "path-to-lawnmower-config-file"`
 
 La société MowItNow a décidé de développer une tondeuse à gazon automatique, destinée aux surfaces rectangulaires.
 La tondeuse peut être programmée pour parcourir l'intégralité de la surface.
