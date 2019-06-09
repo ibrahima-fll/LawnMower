@@ -10,6 +10,6 @@ object Main extends App {
       case Left(exception) => throw exception
     }
 
-    case _ =>
+    case _ => ()
   }
 }

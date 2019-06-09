@@ -10,8 +10,14 @@ case class Lawn(dimension: Dimension, mowers: Seq[Mower]) {
 }
 
 object Lawn {
+  /**
+    * Creates a lawn with specific dimension and its mowers.
+    *
+    * @param filename the file path that contains the lawnmower config.
+    * @return [[Either[FileException, Lawn]]
+    */
   def apply(filename: String): Either[FileException, Lawn] = {
-    val fileContent: Either[FileException, Parsed[(Dimension, Seq[(Position, Seq[Action])])]] = File.read(filename)
+    val fileContent = File.read(filename)
 
     fileContent match {
       case Left(exception) => Left(exception)

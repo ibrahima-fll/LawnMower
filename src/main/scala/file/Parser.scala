@@ -4,7 +4,16 @@ import fastparse._ , NoWhitespace._
 import lawn.Dimension
 import mower.{Action, Direction, Position}
 
-
+/**
+  * Parsers to read a file formatted as follow:
+  * 5 5
+  * 1 2 N
+  * GAGAGA
+  *
+  * The two first number consist of a lawn dimension
+  * The following pair of rows consist of a mower position and its instruction to move.
+  *
+  */
 object Parser {
   private[file] def number[_: P]: P[Int] = P(CharIn("0-9").rep(1).!.map(_.toInt))
 
@@ -24,10 +33,7 @@ object Parser {
 
   private[file] def instructions[_: P]: P[Seq[Action]] = P(action.rep)
 
-  //todo: ADD Option for (mower, instruction) couple.
   private[file] def configFileParser[_: P]: P[(Dimension, Seq[(Position, Seq[Action])])] = P(
-    dimension ~ newLine ~ (position ~ newLine ~ instructions ~ newLine.?).rep ~ End
+    dimension ~ newLine ~ (position ~ newLine ~ instructions ~ newLine.?).rep(0) ~ End
   )
-
-
 }

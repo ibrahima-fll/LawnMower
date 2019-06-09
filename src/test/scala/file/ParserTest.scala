@@ -55,6 +55,30 @@ class ParserTest extends WordSpec with Matchers {
             (Position(1, 2, N), Seq(G, A, G, A, G, A, G, A, A)),
             (Position(3, 3, E), Seq(A, A, D, A, A, D, A, D, D, A))
           )), 47)
+
+        parse(
+          """5 5""".stripMargin, Parser.configFileParser(_)) shouldBe Parsed.Success(
+          (Dimension(5, 5), Seq()), 3)
+      }
+    }
+    "return an error" when {
+      "parsing empty string" in {
+        parse(
+          """""".stripMargin, Parser.configFileParser(_)).isSuccess shouldBe false
+      }
+      "parsing malformed string" in {
+        parse(
+          """5 5
+            |1 2 N
+            |GAGAGAGAA
+            |3 3 E
+          """.stripMargin, Parser.configFileParser(_)).isSuccess shouldBe false
+
+        parse(
+          """1 2 N
+            |5 5
+            |GAGAGAGAA
+          """.stripMargin, Parser.configFileParser(_)).isSuccess shouldBe false
       }
     }
   }

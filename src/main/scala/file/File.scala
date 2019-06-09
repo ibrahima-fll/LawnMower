@@ -12,13 +12,18 @@ import scala.util.control.NonFatal
 import scala.util.{Failure, Success, Try}
 
 object File {
+  /**
+    * Reads a file content and return either the content or the encountered exception while trying to parse it.
+    *
+    * @param filename filepath to read
+    * @return [[Either[FileException, Parsed[(Dimension, Seq[(Position, Seq[Action])])]]
+    */
   def read(filename: String): Either[FileException, Parsed[(Dimension, Seq[(Position, Seq[Action])])]] =
     Try {
       val source = Source.fromFile(filename)
       val file = source.mkString
       source.close
 
-      //todo check for empty files, malformedFiles.
       parse(file, Parser.configFileParser(_))
     } match {
       case Success(value) => Right(value)

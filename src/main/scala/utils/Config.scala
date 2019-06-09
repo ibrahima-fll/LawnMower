@@ -7,6 +7,9 @@ case class Config(filename: String = "")
 object Config {
   private val builder = OParser.builder[Config]
 
+  /**
+    * Input command line parameters parser.
+    */
   val parser: OParser[Unit, Config] = {
     import builder._
     OParser.sequence(
