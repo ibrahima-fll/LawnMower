@@ -39,4 +39,6 @@ Le fichier suivant est fourni en entrée :
 On attend le résultat suivant (position finale des tondeuses) : 
 * 1 3 N
 * 5 1 E
+
+
 NB: Les données en entrée sont injectées sous forme de fichier.
