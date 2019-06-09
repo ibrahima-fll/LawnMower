@@ -1,4 +1,4 @@
-# tondeuse-scala
+# LawnMower-scala
 
 # Usage
 Run the following command:
