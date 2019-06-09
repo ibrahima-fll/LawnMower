@@ -1,5 +1,7 @@
 package mower
 
+import lawn.Dimension
+
 case class Position(x: Int, y: Int, headDirection: Direction) {
   private def forward: Position =
     headDirection match {
@@ -9,11 +11,13 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
       case E => this.copy(x = x + 1)
     }
 
-  def move(action: Action): Position =
+  def move(action: Action, dimension: Dimension): Position =
     action match {
       case G => this.copy(headDirection = turnLeft)
       case D => this.copy(headDirection = turnRight)
-      case A => this.forward
+      case A => if(isMoveAllowed(dimension))
+        this.forward
+      else this
     }
 
   private def turnLeft: Direction = {
@@ -32,5 +36,10 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
       case W => N
       case E => S
     }
+  }
+
+  private def isMoveAllowed(dimension: Dimension): Boolean = this match {
+      case Position(0, _, W) | Position(_, 0, S) | Position(dimension.width, _, E) | Position(_, dimension.height, N) => false
+      case _ => true
   }
 }
