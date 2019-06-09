@@ -1,4 +1,4 @@
-# LawnMower-scala
+# LawnMower
 
 # Usage
 Run the following command:
