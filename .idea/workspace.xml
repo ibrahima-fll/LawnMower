@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="621a48fb-27e8-4a59-91a6-1686be2ba914" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="91" column="19" lean-forward="true" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+            <state relative-caret-position="311">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/build.sbt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="305">
-              <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="137">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding>
                 <element signature="e#14#28#0" expanded="true" />
               </folding>
@@ -159,6 +159,7 @@
       <find>headDirection</find>
       <find>vcs</find>
       <find>given</find>
+      <find>target</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,9 +198,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/file/File.scala" />
         <option value="$PROJECT_DIR$/project/plugin.sbt" />
         <option value="$PROJECT_DIR$/src/test/scala/file/ParserTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala" />
       </list>
     </option>
   </component>
@@ -283,7 +284,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560085711216" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560086878466" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -305,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.LawnTest.Lawn should be created properly">
+  <component name="RunManager" selected="ScalaTest.ScalaTests in 'scala'">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LawnMower" />
@@ -328,24 +329,6 @@
       <setting name="testKind" value="Test name" />
       <setting name="path" value="lawn.LawnTest" />
       <setting name="testName" value="Lawn should be created properly" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParserTest.Parser should parse when given configFile" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="LawnMower" />
-      <setting name="path" value="file.ParserTest" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="file.ParserTest" />
-      <setting name="testName" value="Parser should parse when given configFile" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -386,20 +369,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScalaTests in 'scala'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true">
+      <module name="LawnMower" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="All in package" />
+      <setting name="package" value="" />
+      <buffered bufClass="file.ParserTest" />
+      <buffered bufClass="file.ParserTest" />
+      <buffered bufClass="lawn.LawnTest" />
+      <buffered bufClass="lawn.LawnTest" />
+      <buffered bufClass="mower.ActionTest" />
+      <buffered bufClass="mower.ActionTest" />
+      <buffered bufClass="mower.DirectionTest" />
+      <buffered bufClass="mower.DirectionTest" />
+      <buffered bufClass="mower.MowerTest" />
+      <buffered bufClass="mower.MowerTest" />
+      <buffered bufClass="mower.PositionTest" />
+      <buffered bufClass="mower.PositionTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="ScalaTest.ParserTest.Parser should parse when given configFile" />
       <item itemvalue="ScalaTest.ParserTest.Parser should parse when given numbers&#10;Parser should parse when given space&#10;Parser should parse when given newline&#10;Parser should parse when given action&#10;Parser should parse when given dimension&#10;Parser should parse when given direction&#10;Parser should parse when given position&#10;Parser should parse when given instructions&#10;Parser should parse when given configFile&#10;Parser should return an error when parsing empty string&#10;Parser should return an error when parsing malformed string" />
       <item itemvalue="ScalaTest.ParserTest.Parser should return an error when parsing malformed string" />
       <item itemvalue="ScalaTest.LawnTest.Lawn should be created properly" />
+      <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
         <item itemvalue="ScalaTest.LawnTest.Lawn should be created properly" />
         <item itemvalue="ScalaTest.ParserTest.Parser should parse when given numbers&#10;Parser should parse when given space&#10;Parser should parse when given newline&#10;Parser should parse when given action&#10;Parser should parse when given dimension&#10;Parser should parse when given direction&#10;Parser should parse when given position&#10;Parser should parse when given instructions&#10;Parser should parse when given configFile&#10;Parser should return an error when parsing empty string&#10;Parser should return an error when parsing malformed string" />
         <item itemvalue="ScalaTest.ParserTest.Parser should return an error when parsing malformed string" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="ScalaTest.ParserTest.Parser should parse when given configFile" />
       </list>
     </recent_temporary>
   </component>
@@ -450,12 +462,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScalaTests_in_'scala' - 2019.06.09 at 13h 48m 30s.xml">
-      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="ParserTest_Parser_should_return_an_error_when_parsing_empty_string_Parser_should_return_an_error_when_parsing_malformed_string - 2019.06.09 at 14h 35m 25s.xml">
-      <configuration name="ParserTest.Parser should return an error when parsing empty string&#10;Parser should return an error when parsing malformed string" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="ParserTest_Parser_should_return_an_error_when_parsing_empty_string - 2019.06.09 at 14h 36m 38s.xml">
       <configuration name="ParserTest.Parser should return an error when parsing empty string" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -480,12 +486,17 @@
     <history-entry file="LawnTest_Lawn_should_be_created_properly - 2019.06.09 at 15h 00m 51s.xml">
       <configuration name="LawnTest.Lawn should be created properly" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2019.06.09 at 15h 22m 28s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2019.06.09 at 15h 23m 03s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -503,7 +514,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32876712" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
@@ -766,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding>
-            <element signature="e#14#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ressources/config.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -803,7 +804,7 @@
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
-          <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -816,8 +817,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="91" column="19" lean-forward="true" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+        <state relative-caret-position="311">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="e#14#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

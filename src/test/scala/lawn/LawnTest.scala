@@ -7,9 +7,7 @@ class LawnTest extends WordSpec with Matchers {
   "Lawn" should {
     "be created properly" in {
 
-      val a = getClass.getResource("/conf.txt").getPath
-
-      val lawn = Lawn(a)
+      val lawn = Lawn(getClass.getResource("conf.txt").getPath)
 
       lawn.isRight shouldBe true
 
