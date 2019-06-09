@@ -88,5 +88,7 @@ fabric.properties
 *.class
 *.log
 target
+project/target
+.idea/workspace.xml
 
 # End of https://www.gitignore.io/api/scala,intellij
