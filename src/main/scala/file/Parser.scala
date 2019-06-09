@@ -1,6 +1,7 @@
 package file
 
-import fastparse._ , NoWhitespace._
+import fastparse.NoWhitespace._
+import fastparse._
 import lawn.Dimension
 import mower.{Action, Direction, Position}
 

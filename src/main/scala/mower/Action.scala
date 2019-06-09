@@ -3,7 +3,9 @@ package mower
 sealed trait Action
 
 case object D extends Action
+
 case object G extends Action
+
 case object A extends Action
 
 object Action {

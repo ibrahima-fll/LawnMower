@@ -34,6 +34,7 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
 
   /**
     * Moves the head of a [[Position]] to face the left of initial position.
+    *
     * @return [[Direction]]
     */
   private[mower] def turnLeft: Direction = {
@@ -47,6 +48,7 @@ case class Position(x: Int, y: Int, headDirection: Direction) {
 
   /**
     * Moves the head of a [[Position]] to face the right of initial position.
+    *
     * @return [[Direction]]
     */
   private[mower] def turnRight: Direction = {

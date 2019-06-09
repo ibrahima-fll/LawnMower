@@ -2,7 +2,6 @@ package lawn
 
 import exception.{FileException, FileParsingException, _}
 import fastparse.Parsed
-import file.File
 import mower.{Action, Mower, Position}
 
 case class Lawn(dimension: Dimension, mowers: Seq[Mower]) {
@@ -13,24 +12,19 @@ object Lawn {
   /**
     * Creates a lawn with specific dimension and its mowers.
     *
-    * @param filename the file path that contains the lawnmower config.
+    * @param fileContent Parsed content of a structured file
     * @return [[Either[FileException, Lawn]]
     */
-  def apply(filename: String): Either[FileException, Lawn] = {
-    val fileContent = File.read(filename)
-
+  def apply(fileContent: Parsed[(Dimension, Seq[(Position, Seq[Action])])]): Either[FileException, Lawn] = {
     fileContent match {
-      case Left(exception) => Left(exception)
-      case Right(parsedExpression) => parsedExpression match {
-        case Parsed.Failure(label, index, _) => Left(FileParsingException(parsingException(label, index)))
-        case Parsed.Success(expression, _) =>
-          val lawnDimension = expression._1
-          val mowers = expression._2.map {
-            case (position: Position, actions: Seq[Action]) => Mower(position, actions)
-          }
+      case Parsed.Failure(label, index, _) => Left(FileParsingException(parsingException(label, index)))
+      case Parsed.Success(expression, _) =>
+        val lawnDimension = expression._1
+        val mowers = expression._2.map {
+          case (position: Position, actions: Seq[Action]) => Mower(position, actions)
+        }
 
-          Right(Lawn(lawnDimension, mowers))
-      }
+        Right(Lawn(lawnDimension, mowers))
     }
   }
 }
