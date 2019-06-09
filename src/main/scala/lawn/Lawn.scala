@@ -6,7 +6,7 @@ import file.File
 import mower.{Action, Mower, Position}
 
 case class Lawn(dimension: Dimension, mowers: Seq[Mower]) {
-  def run: Seq[Mower] = mowers.map(_.executeActions)
+  def run: Seq[Mower] = mowers.map(_.executeActions(dimension))
 }
 
 object Lawn {

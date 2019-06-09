@@ -1,5 +1,6 @@
 package mower
 
+import lawn.Dimension
 import org.scalatest.{Matchers, WordSpec}
 
 class MowerTest extends WordSpec with Matchers {
@@ -10,7 +11,7 @@ class MowerTest extends WordSpec with Matchers {
 
       val mowers = Seq(mower1, mower2)
 
-      mowers.map(_.executeActions) shouldBe Seq(
+      mowers.map(_.executeActions(Dimension(5, 5))) shouldBe Seq(
         Mower(Position(1, 3, N), Seq()),
         Mower(Position(5, 1, E), Seq())
       )

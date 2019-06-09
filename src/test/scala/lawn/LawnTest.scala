@@ -21,7 +21,7 @@ class LawnTest extends WordSpec with Matchers {
       )
 
       lawn.right.get.mowers
-        .map(_.executeActions) shouldBe Seq(
+        .map(_.executeActions(Dimension(5, 5))) shouldBe Seq(
         Mower(Position(1, 3, N), Seq()),
         Mower(Position(5, 1, E), Seq())
       )
