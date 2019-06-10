@@ -6,7 +6,7 @@ scalaVersion := "2.12.8"
 
 libraryDependencies += "com.github.scopt" %% "scopt" % "4.0.0-RC2"
 libraryDependencies += "com.lihaoyi" %% "fastparse" % "2.1.0"
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test
 
 scalacOptions ++= Seq(
   "-deprecation",                      // Emit warning and location for usages of deprecated APIs.
@@ -59,13 +59,3 @@ scalacOptions ++= Seq(
 lazy val app = (project in file(".")).settings(
     mainClass in assembly := Some("Main")
   )
-
-assemblyMergeStrategy in assembly := {
-  case PathList("javax", "servlet", _ @ _*)         => MergeStrategy.first
-  case PathList(ps @ _*) if ps.last endsWith ".html" => MergeStrategy.first
-  case "application.conf"                            => MergeStrategy.concat
-  case "unwanted.txt"                                => MergeStrategy.discard
-  case x =>
-    val oldStrategy = (assemblyMergeStrategy in assembly).value
-    oldStrategy(x)
-}
