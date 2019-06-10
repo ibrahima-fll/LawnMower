@@ -18,7 +18,7 @@ case class Mower(position: Position, actions: Seq[Action]) {
     this.copy(position = position.move(action, dimension), actions = actions.drop(1))
 
   /**
-    * Executes a serie of [[Action]] within the allowed movement range defined by a lawn's Dimension.
+    * Executes a series of [[Action]] within the allowed movement range defined by a lawn's Dimension.
     *
     * @param dimension dimension in which a movement is allowed.
     * @return
