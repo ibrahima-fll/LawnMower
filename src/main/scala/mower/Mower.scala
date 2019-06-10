@@ -5,7 +5,7 @@ import lawn.Dimension
 import scala.annotation.tailrec
 
 case class Mower(position: Position, actions: Seq[Action]) {
-  override lazy val toString = s"Mower(${position.x}, ${position.y}, ${position.headDirection})"
+  override lazy val toString = s"${position.x} ${position.y} ${position.headDirection}"
 
   /**
     * Moves a [[Mower]] according to an action and within the allowed movement range defined by a lawn's Dimension.

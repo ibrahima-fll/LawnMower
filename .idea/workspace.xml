@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="621a48fb-27e8-4a59-91a6-1686be2ba914" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/lawn/Lawn.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/lawn/Lawn.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala" afterDir="false" />
-    </list>
+    <list default="true" id="621a48fb-27e8-4a59-91a6-1686be2ba914" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -121,8 +117,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="209">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding>
                 <element signature="e#14#28#0" expanded="true" />
               </folding>
@@ -313,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560088505925" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560090168836" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -491,12 +487,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParserTest_Parser_should_return_an_error_when_parsing_empty_string - 2019.06.09 at 14h 37m 05s.xml">
-      <configuration name="ParserTest.Parser should return an error when parsing empty string" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="ParserTest_Parser_should_parse_when_given_configFile - 2019.06.09 at 14h 39m 55s.xml">
-      <configuration name="ParserTest.Parser should parse when given configFile" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="ParserTest_Parser_should_return_an_error_when_parsing_malformed_string - 2019.06.09 at 14h 57m 04s.xml">
       <configuration name="ParserTest.Parser should return an error when parsing malformed string" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -521,12 +511,18 @@
     <history-entry file="LawnTest_Lawn_should_be_created_properly - 2019.06.09 at 15h 47m 12s.xml">
       <configuration name="LawnTest.Lawn should be created properly" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2019.06.09 at 15h 54m 26s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2019.06.09 at 15h 54m 46s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -544,7 +540,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32876712" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
@@ -855,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/lawn/LawnTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="209">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
             <element signature="e#14#28#0" expanded="true" />
           </folding>
